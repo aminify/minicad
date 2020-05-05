@@ -7,15 +7,37 @@
   padding: 10px;
 }
 
+button {
+  background-color: #ddddee;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 10px;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  transition: transform 0.15s ease-out;
+}
+
+button:hover {
+  transform: scale(1.15);
+}
+
+button:active {
+  transform: scale(1);
+}
+
 svg {
   /* width: 500px;
   height: 500px; */
+  touch-action: pinch-zoom;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+  background-color: #efefef;
   /* outline: none; */
 }
 
@@ -24,4 +46,5 @@ circle {
 }
 
 .App-header {
+  /* background-color: aqua; */
 }
