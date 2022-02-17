@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import './App.css';
+import undoIcon from './undo.svg';
 import { findClosestDot } from './utils';
 
 const G = 15 // grid size
@@ -57,7 +58,7 @@ function App() {
         <h3 style={{margin: 10}}>نقشه کشی آنلاین</h3>
         <div style={{display: 'flex', justifyContent: 'space-around', flexDirection: 'row' }}>
           <button onClick={() => setLines(lines.slice(0, -1))}>
-            <img src={process.env.PUBLIC_URL + 'undo.svg'} width={18} height={18} alt="Undo" />
+            <img src={undoIcon} width={18} height={18} alt="Undo" />
           </button>
         </div>
       </header>
